@@ -1,10 +1,15 @@
 def create_board():
     return [['.' for _ in range(10)] for _ in range(10)]
 def display_board(board):
-    print('   ' + ' '.join(str(sym) for sym in range(10)))
-    for row_index, row in enumerate(board):
-        print(f'{row_index}  ' + ' '.join(row))
+    print('  ', end='')
+    for i in range(10):
+        print(i, end='  ')
     print()
+    for i in range(10):
+        print(i, end=' ')
+        for j in range(10):
+            print(board[i][j], end='  ')
+        print()
 board = create_board()
 def get_player_move(board):
     while True:
@@ -22,6 +27,7 @@ def get_player_move(board):
 def make_move(board, row, col, mark):
     board[row][col] = mark
 def game_loop():
+    board = create_board()
     current_player = 'X'
     while True:
         display_board(board)
@@ -57,4 +63,11 @@ def check_for_chain(board, row, col):
         if chain_length >= 3:
             return True
     return False
-game_loop()
+def main():
+    while True:
+        game_loop()
+        replay = input("Хотите сыграть снова? (да/нет): ").strip().lower()
+        if replay != 'да':
+            print("Спасибо за игру!")
+            break
+main()
