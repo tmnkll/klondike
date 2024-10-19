@@ -1,7 +1,7 @@
 def create_board():
     return [['.' for _ in range(10)] for _ in range(10)]
 def display_board(board):
-    print('   ' + ' '.join(str(i) for i in range(10)))
+    print('   ' + ' '.join(str(sym) for sym in range(10)))
     for row_index, row in enumerate(board):
         print(f'{row_index}  ' + ' '.join(row))
     print()
