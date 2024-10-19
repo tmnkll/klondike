@@ -35,8 +35,8 @@ def game_loop():
         row, col = get_player_move(board)
         make_move(board, row, col, current_player)
         if check_for_chain(board, row, col):
-            print(f'Игрок {current_player} проиграл!')
             display_board(board)
+            print(f'Игрок {current_player} проиграл!')
             break
         current_player = 'O' if current_player == 'X' else 'X'
 DIRECTIONS = [
