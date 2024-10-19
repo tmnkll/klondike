@@ -8,4 +8,4 @@
 
 ![photo_2024-10-19_00-53-09](https://github.com/user-attachments/assets/e1b382b3-75cd-472c-bd9c-d183d23ae379)
 
-![photo_2024-10-19_00-57-06](https://github.com/user-attachments/assets/d5e77528-7ef7-4ac2-8fa4-4d4935e09d61)
+![photo_2024-10-20_01-06-02](https://github.com/user-attachments/assets/ca962522-fec3-4703-82d5-f26dc83afb0d)
