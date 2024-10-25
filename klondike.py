@@ -63,11 +63,4 @@ def check_for_chain(board, row, col):
         if chain_length >= 3:
             return True
     return False
-def main():
-    while True:
-        game_loop()
-        replay = input("Хотите сыграть снова? (да/нет): ").strip().lower()
-        if replay != 'да':
-            print("Спасибо за игру!")
-            break
-main()
+game_loop()
